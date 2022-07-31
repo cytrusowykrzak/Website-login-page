@@ -28,6 +28,7 @@ form{
     padding:36px 24px;
     text-align: center;
     margin:25px;
+    margin-left:70px;
 }
 .signin{
     padding:0px;
@@ -44,7 +45,7 @@ form{
 input{
     background:white;
     border:0;
-    padding: 10px 40px;
+    padding: 5px 30px;
     border-bottom: 2px solid var(--color-lightgrey);
     outline:0;
     font-size:15px;
@@ -60,17 +61,28 @@ button{
 }
 label{
     color:var(--color-lightgrey);
-    margin-right:55%;
     font-size:15px;
+    float:left;
 }
 .check{
-    margin-right:150px;
-    max-height:30px;
-    width:150px;
-    margin-bottom:20px;
-    font-size:15px;
+    width:130px;
+    margin-bottom:10px;
+    font-size:12px;
+    float:left;
+    
+}
+.Checkbox{
+    transform : scale(1);
+    background-color: #990000; 
+}
+.check label{
+    float:right;
+    font-size:12px;
+    margin-right:15px;
 }
 .fpassword{
     justify-content: right;
-    font-size:15px;
+    font-size:12px;
+    margin-bottom:15px;
+    color:#009AFF;
 }
