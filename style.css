@@ -1,88 +1,139 @@
 :root{
-    --color-lightgrey:#D2CECE;
-    --color-dodgerblue:#009AFF;
+  --color-lightgrey:#696868;
+  --color-dodgerblue:#009AFF;
 }
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 *{
-    box-sizing:border-box;
-    margin:0;
-    padding:0;
-   
+  box-sizing:border-box;
+  margin:0;
+  padding:0;
+ 
 }
-body{
-    background:var(--color-lightgrey);
+
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity:0.2;
+    filter:blur(5px);
+  }
+  body{
     background:linear-gradient(to top, #22a0e9,#4db0e9);
-    display:flex;
-    justify-content:left;
-    align-items:center;
-    height:100vh;
-    width:100vw;
-    font-size:30px;
+    height:100%;
+    width:100%;
     font-family: 'Rubik', sans-serif;
-}
-form{
+  }
+  .container{
+    display:flex;
+    min-height:100vh;
+    width:100vw;
+    padding:0;
+    margin:0;
+    justify-content:center;
+    align-items:center;
+  }
+  .form{
+    max-width:100%;
+    max-height:100%;
+    min-width:15%;
+    min-height:15%;
+    position:relative;
+    padding:2%;
+    margin:2%;
+    background-color: white;
     border-radius:10px;
     box-shadow:0px 8px 24px 0 rgba(0,0,0,0.2);
-    background:white;
-    max-width:300px;
-    padding:36px 24px;
-    text-align: center;
-    margin:25px;
-    margin-left:70px;
-}
-.signin{
-    padding:0px;
-    margin-bottom:15px;
-    justify-content: center;
-}
-.textundersign{
+  }
+  .signin{
+    min-width:10%;
+    margin-left:0%;
+    background-color: white;
     color:var(--color-lightgrey);
-    font-size:14px;
-    text-align:center;
-    margin-bottom:50px;
-    justify-content: center;
-}
-input{
-    background:white;
-    border:0;
-    padding: 5px 30px;
-    border-bottom: 2px solid var(--color-lightgrey);
-    outline:0;
-    font-size:15px;
-    margin-bottom:32px;
-    text-align:left;
-}
-button{
-    background-color:var(--color-dodgerblue);
-    border:none;
-    border-radius:5px;
-    color:white;
-    padding:10px;
-}
-label{
-    color:var(--color-lightgrey);
-    font-size:15px;
-    float:left;
-}
-.check{
-    width:130px;
+    word-wrap: break-word;
+    margin-bottom:20px;
+    font-weight:700;
+  }
+  .signin h2{
+    min-width:10%;
+    color:black;
+    font-weight:700;
     margin-bottom:10px;
-    font-size:12px;
-    float:left;
-    
-}
-.Checkbox{
-    transform : scale(1);
-    background-color: #990000; 
-}
-.check label{
-    float:right;
-    font-size:12px;
-    margin-right:15px;
-}
-.fpassword{
-    justify-content: right;
-    font-size:12px;
+  }
+  .form_input-container{
     margin-bottom:15px;
+    background-color:rgb(255, 255, 255);
+    text-align:left;
     color:#009AFF;
-}
+  }
+  .form_input-container input{
+    padding-bottom:5px;
+    font-size:15px;
+    margin-top:15px;
+    width:100%;
+    border:0;
+    outline:0;
+    border-bottom:3px solid #D2CECE;
+  }
+  .check{
+    background-color: rgb(255, 255, 255);
+    width:100%;
+    height:15%;
+    color:#009AFF;
+    font-weight:700;
+    min-width:50%;
+    margin-bottom:15px;
+    
+  }
+  .check Checkbox{
+    background-color: #009AFF;
+  }
+  /* Button styles*/
+  .container button{
+    width:100px;
+    background-color: #009AFF;
+    border:0px;
+    width:100%;
+    height:40px;
+    color:white;
+    font-size:15px;
+    font-weight:700;
+    border-radius:10px;
+    margin-bottom: 15px;
+  }
+  .container button:hover{
+    background-color: #1a8ad4;
+  
+  }
+  
+  .container button:active{
+    background-color: #065e99;
+  }
+
+  /* Button styles*/
+
+  .dntsignup{
+    color:var(--color-lightgrey);
+    font-weight:700;
+
+    margin-top:10px;
+  }
+  .dntsignup a{
+    color:#009AFF;
+    text-decoration: none;
+  }
+  @media screen and (min-width: 500px) {
+    div.form{
+      font-size: 15px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    div.form {
+      font-size: 10px;
+    }
+  }
