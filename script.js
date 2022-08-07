@@ -1,7 +1,7 @@
 const signup=document.querySelector(".signuptext");
 const login=document.querySelector(".logintext");
-const loginpage=document.querySelector(".forms");
-const registerpage=document.querySelector(".form");
+const loginpage=document.querySelector(".loginpage");
+const registerpage=document.querySelector(".registerpage");
 const email=document.querySelector("email");
 const password=document.querySelector("password");
 const submit=document.querySelector("submit");

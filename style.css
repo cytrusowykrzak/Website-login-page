@@ -38,7 +38,7 @@
     justify-content:center;
     align-items:center;
   }
-  .forms{
+  .loginpage{
     max-width:100%;
     max-height:100%;
     min-width:15%;
@@ -52,7 +52,7 @@
 
   }
 
-  .form{
+  .registerpage{
     max-width:100%;
     max-height:100%;
     min-width:15%;
