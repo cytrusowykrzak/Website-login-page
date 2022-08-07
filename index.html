@@ -13,7 +13,7 @@
         <source src="videos/pexels-tima-miroshnichenko-6549663.mp4" type="video/mp4">
     </video>
     <div class="container">
-        <div class="form">
+        <div class="forms">
             <form autocomplete="off">
                 <div class="signin" align="center">
                     <h2>Sign in</h2>
@@ -22,26 +22,70 @@
                 
                 <div class="form_input-container">
                     <h3>E-mail:</h3>
-                    <input type="text"  id="user">
+                    <input type="text" name="email" required  id="user">
                 </div>
                 
                 <div class="form_input-container">
                     <h3>Password:</h3>
-                    <input type="password" name="" id="password">
+                    <input type="password" name="password" id="password">
                 </div>
                 <div class="check">
                     <input type="checkbox" class="Checkbox">
                     Remember Me
                 </div>
-                <button>Sign In</button>
+                <button name="submit">Sign In</button>
                 <div class="dntsignup">
-                    Don't have an account? <a href="#">Sign Up</a>
+                    Don't have an account? <a class="signuptext">Sign Up</a>
                 </div>
             </form>
         </div>
+        <div class="form" style="display: none;">
+            <form autocomplete="off">
+                <div class="signin" align="center">
+                    <h2>Sign Up</h2>
+                    Welcome to Publishing House!
+                </div>
+                <div class="form_input-container">
+                    <h3>Username:</h3>
+                    <input type="text" name="email"  id="user">
+                </div>
+                
+                <div class="form_input-container">
+                    <h3>E-mail:</h3>
+                    <input type="text" name="email"  id="user">
+                </div>
+                
+                <div class="form_input-container">
+                    <h3>Password:</h3>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="form_input-container">
+                    <h3>Password:</h3>
+                    <input type="password" name="password" id="password">
+                </div>
+                <div class="check">
+                    <input type="checkbox" class="Checkbox">
+                    Remember Me
+                </div>
+                <button name="submit">Sign In</button>
+                <div class="dntsignup">
+                    Have an account? <a  class="logintext">Login</a>
+                </div>
+            </form>
+        </div>
+        <!-- <div class="modeswitch">
+            <input type="checkbox" class="checkbox" id="">
+            <label for="checkbox" class="label">
+                <i class="fas fa-moon">d</i>
+                <i class="fas fa-sun">d</i>
+                <div class="ball"></div>
+            </label>
 
-    
-        
+            </label>
+        </div> -->
+
+    </div>
+    <script src="script.js"></script>
   
 </body>
 </html>
