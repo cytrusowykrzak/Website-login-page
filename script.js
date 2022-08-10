@@ -12,7 +12,6 @@ const hidder = ()=>{
 
     loginpage.style.display="none";
     registerpage.style.display='';
-    registerpage.style.transition = "all 2s";
 
 };
 const showpage=()=>{

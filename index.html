@@ -9,9 +9,11 @@
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 </head>
 <body>
+    
     <video id="background-video" autoplay loop muted>
         <source src="backgroundvideo.mp4" type="video/mp4">
     </video>
+    <div data-tilt>
     <div class="container">
         <div class="loginpage">
             <form autocomplete="off">
@@ -39,11 +41,11 @@
                 </div>
             </form>
         </div>
-        <div class="registerpage" style="display: none;">
+        <div class="registerpage" style="display: none; ">
             <form autocomplete="off">
                 <div class="signin" align="center">
                     <h2>Sign Up</h2>
-                    Welcome to Publishing House!
+                    Don't have a account? Create a new one!
                 </div>
                 <div class="form_input-container">
                     <h3>Username:</h3>
@@ -60,19 +62,18 @@
                     <input type="password" name="password" id="password">
                 </div>
                 <div class="form_input-container">
-                    <h3>Password:</h3>
+                    <h3>Repeat Password:</h3>
                     <input type="password" name="password" id="password">
                 </div>
-                <div class="check">
-                    <input type="checkbox" class="Checkbox">
-                    Remember Me
-                </div>
                 <button name="submit">Sign In</button>
-                <div class="dntsignup">
+                <div class="dntsignupregister">
                     Have an account? <a  class="logintext">Login</a>
                 </div>
             </form>
+            
         </div>
+    </div>
+        
         <!-- <div class="modeswitch">
             <input type="checkbox" class="checkbox" id="">
             <label for="checkbox" class="label">
@@ -86,6 +87,6 @@
 
     </div>
     <script src="script.js"></script>
-  
+    <script src="vanilla-tilt.js"></script>
 </body>
 </html>
